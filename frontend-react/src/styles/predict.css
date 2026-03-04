@@ -1,0 +1,106 @@
+/* ===== Dashboard Layout ===== */
+
+.dashboard-page {
+  padding: 30px;
+}
+
+/* KPI GRID */
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.kpi-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* MAIN GRID */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* CARD */
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ====== IMPORTANT: FIX FOR CHART ====== */
+
+.chart-section {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.chart-section h3 {
+  margin-bottom: 15px;
+}
+
+.chart-section canvas {
+  flex: 1;              /* fills remaining space */
+  
+}
+
+
+/* HISTORY TABLE */
+
+.history-section {
+  margin-top: 30px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Form Section Styling */
+
+.form-section input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #e3e6ed;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-section input:focus {
+  border-color: #1ea7fd;
+  box-shadow: 0 0 0 3px rgba(30, 167, 253, 0.15);
+}
+
+/* Button */
+.form-section button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #1ea7fd, #007bff);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.2);
+}
